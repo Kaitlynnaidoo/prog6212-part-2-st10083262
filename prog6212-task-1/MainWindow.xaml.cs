@@ -24,5 +24,10 @@ namespace prog6212_task_1
         {
             InitializeComponent();
         }
+
+        private void submit_UI_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
