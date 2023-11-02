@@ -57,9 +57,9 @@ namespace prog6212_task_1
             if (!errorFlag) // If there are no errors in the inputs
             {
                 // Open the modules window
-                /*ModulesWindow window = new ModulesWindow(numberOfWeeks);
+                ModulesWindow window = new ModulesWindow(numberOfWeeks);
                 window.Show();
-                this.Close();*/
+                this.Close();
             }
         }
     }

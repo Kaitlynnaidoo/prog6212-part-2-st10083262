@@ -22,10 +22,12 @@ namespace prog6212_task_1
     {
 
         private ObservableCollection<Module> modules = new ObservableCollection<Module>();
-        private int semesterWeeks = 10;
-        public ModulesWindow(/*int numberOfWeeks*/)
+        private int semesterWeeks;
+        public ModulesWindow(int numberOfWeeks)
         {
             InitializeComponent();
+
+            semesterWeeks = numberOfWeeks;
 
             Module module1 = new Module("prog6221", "Programming 2A", 40, 5, semesterWeeks);
             Module module2 = new Module("cldv7311", "Cloud Development 2B", 30, 15, semesterWeeks);
