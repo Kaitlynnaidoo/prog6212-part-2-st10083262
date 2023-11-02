@@ -47,22 +47,18 @@ namespace prog6212_task_1
             }
 
             int numberOfWeeks = 0;
-            try
-            {
-                numberOfWeeks = Int32.Parse(numWeeks);
-            }
-            catch (FormatException)
+            if (!Int32.TryParse(numWeeks, out numberOfWeeks))
             {
                 errorFlag = true;
                 error_UI.Text += "The number of weeks inputted for the semester is incorrect! ";
             }
 
 
-            if (!errorFlag) // If there are no errors
+            if (!errorFlag) // If there are no errors in the inputs
             {
-                // Launch next window
-                /*ModulesWindow win = new ModulesWindow(weeks);
-                win.Show();
+                // Open the modules window
+                /*ModulesWindow window = new ModulesWindow(numberOfWeeks);
+                window.Show();
                 this.Close();*/
             }
         }

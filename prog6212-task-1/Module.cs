@@ -60,7 +60,7 @@ namespace prog6212_task_1
         }
 
 
-        // Returns how many hours are left to be studied from the recommended amount
+        // Returns how many hours are left to be studied from the recommended amount this week
         public int getRemainingSelfStudyHours
         {
 
